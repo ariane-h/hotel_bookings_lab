@@ -1,6 +1,6 @@
 <template>
   <div id="bookingsGrid">
-      <booking v-for="booking, index in bookings" :key="index" :booking="booking"></booking>
+      <booking v-for="(booking, index) in bookings" :key="index" :booking="booking"></booking>
   </div>
 </template>
 
