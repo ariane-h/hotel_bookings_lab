@@ -20,14 +20,14 @@ export default {
     name: "booking",
     props: ['booking'],
     methods: {
-    handleDelete(id){
-    		BookingService.deleteBooking(id)
-    		.then(response => eventBus.$emit('booking-deleted', id));
+        handleDelete(id){
+            BookingService.deleteBooking(id)
+            .then(response => eventBus.$emit('booking-deleted', id));
             },
-    handleCheckInOut(id){
-        BookingService.updateBooking(id, booking_jsonBody)
-
-    }
+        handleCheckInOut(id){
+            BookingService.updateBooking(id, booking_jsonBody)
+            .then(response => eventBus.$emit('booking-updated', id));
+            }
     }
 }
 </script>
