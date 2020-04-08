@@ -3,11 +3,11 @@
 		<h2>Add a Booking</h2>
 		<div class="formWrap">
 			<label for="name">Name:</label>
-			<input type="text" id="name" v-model="name" />
+			<input type="text" id="name" v-model="name" required />
 		</div>
 		<div class="formWrap">
 			<label for="email">Email:</label>
-			<input type="text" id="email" v-model="email" />
+			<input type="text" id="email" v-model="email" required/>
 		</div>
 		<div class="formWrap">
             <p>Check In / Check Out</p>
